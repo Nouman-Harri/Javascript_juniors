@@ -3,23 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="/src/input.css" rel="stylesheet" />
     <title>Javascript info</title>
-    <link rel="stylesheet" href="app.css" />
+    <!-- <link rel="stylesheet" href="app.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- here is you website front page -->
-    <nav>
-      <h1>hello logo is here</h1>
-      <ul>
-        <li>pages</li>
-        <li>creator</li>
-        <li>location</li>
-        <li>Home</li>
-        <li>places</li>
-        <li>portfolio</li>
-      </ul>
-    </nav>
+    <nav
+      class="flex items-center p-3 bg-gray-200 cursor-pointer justify-around"
+    >
+      <span
+        ><img
+          src="./img/squarespace-logo-horizontal-black.svg"
+          class="h-16"
+          alt=""
+      /></span>
 
+      <ul class="flex list-none p-0 m-0 gap-9">
+        <li class="">
+          <div class="dropdown relative inline-block">
+            <button class="dropbtn text-black p-4 text-base border-none">
+              Services
+            </button>
+            <div
+              class="dropdown-content hidden absolute bg-gray-300 min-w-[160px] shadow-md z-10 hover:bg-gray-100"
+            >
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown relative inline-block">
+            <button class="dropbtn text-black p-4 text-base border-none">
+              Template
+            </button>
+            <div
+              class="dropdown-content hidden absolute bg-gray-300 min-w-[160px] shadow-md z-10 hover:bg-gray-100"
+            >
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown relative inline-block">
+            <button class="dropbtn text-black p-4 text-base border-none">
+              Services
+            </button>
+            <div
+              class="dropdown-content hidden absolute bg-gray-300 min-w-[160px] shadow-md z-10 hover:bg-gray-100"
+            >
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <button class="p-4 bg-blue-950 text-white">GET STARTED</button>
+    </nav>
     <script src="main.js"></script>
   </body>
 </html>
