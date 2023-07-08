@@ -1,32 +1,41 @@
-/* add style here with global useage */
-
-/* global css is here can be used any where easily */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f2f2f2;
-  cursor: pointer;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
+body{
   margin: 0;
   padding: 0;
 }
-
-nav ul li {
-  margin-right: 40px;
-  cursor: pointer;
+.navi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14px;
+  background-color: #a8a4a4;
+  /* cursor: pointer; */
+  /* border: 1px solid gray */
 }
-nav ul li:hover {
-  background-color: #d5d2d2;
-  padding: 5px;
-  border-radius: 3%;
+
+
+  
+.logo{
+  font-size: 20px;
   color: white;
 }
+
+
+.list{
+ display: flex;
+  list-style: none;
+ gap: 20px;
+ font-size: 18px;
+ color: white;
+  
+}
+.btn{
+  padding: 8px;
+  color: darkblue;
+  border:none;
+  cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -36,4 +45,14 @@ nav ul li:hover {
     margin-bottom: 10px;
     flex-wrap: wrap;
   }
+
 }
+@media(max-width : 320px){
+  .navi{
+    padding: 4px;
+  }
+  .list{
+    padding-left: 0px;
+  }
+}
+
